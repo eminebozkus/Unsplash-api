@@ -32,8 +32,7 @@ function addImagesPage(imgData) {
 //////////////////////////////////////////////////////////////
 async function getImageBySearch(query) {
   const resp = await fetch(
-    "https://api.unsplash.com/search/photos?client_id=;query=" +
-      query
+    "https://api.unsplash.com/search/photos?client_id=;query=" + query
   );
   const respData = await resp.json();
   return respData;
@@ -95,9 +94,7 @@ function addImagesCount(imgData) {
 ///////////////////////////////////////
 getImages();
 async function getImages() {
-  const resp = await fetch(
-    "https://api.unsplash.com/photos?client_id="
-  );
+  const resp = await fetch("https://api.unsplash.com/photos?client_id=");
   const respData = await resp.json();
   addImages(respData);
 }
