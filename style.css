@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ebf2fa;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #70587c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: none;
+  margin-left: 0%;
+}
+
+.topnav button {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border:#9d7dad;
+  background-color: #70587c;
+  border-radius: 8px;
+  font-size: 17px;
+}
+
+.topnav button:hover {
+  color: black;
+}
+
+.topnav button:hover {
+  border: black;
+  background: transparent;
+  border-radius: 10px;
+  background-position-y: center;
+  color: #000;
+}
+
+input[type="search"] {
+  width: 130px;
+  height: 50px;
+  margin: center;
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid #70587c;
+  border-radius: 5px;
+  border-style: ridge;
+  float: right;
+  margin-right: 10px;
+  font-size: 16px;
+  background-color: #ebf2fa;
+  background-image: url("./loupe.png");
+  background-position: 10px 10px;
+  background-size: 18%;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="search"]:focus {
+  width: 30%;
+  background-size: 5%;
+}
+
+/* img {
+  width: 35%;
+  border: 2px solid rgb(214, 179, 214);
+  border-radius: 5px;
+  border-style: ridge;
+} */
+div.image-div {
+  margin: 5px;
+  border: 1px solid #ebf2fa;
+  float: left;
+  width: 185px;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+
+div.image-div:hover {
+  border: 1px solid #000;
+}
+
+div.image-div img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: #c8b8db;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div.images {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .images {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .images {
+    width: 100%;
+  }
+}
